@@ -1,0 +1,29 @@
+POST http://127.0.0.1:5000/api/account/login HTTP/1.1
+content-type: application/x-www-form-urlencoded
+
+id=최연웅
+&password=helloks
+
+###
+
+POST http://127.0.0.1:5000/api/account/login HTTP/1.1
+content-type: application/x-www-form-urlencoded
+
+id=홍길동
+&password=nopass
+
+###
+
+GET http://127.0.0.1:5000/api/building HTTP/1.1
+
+###
+
+GET http://127.0.0.1:5000/api/ap HTTP/1.1
+
+###
+
+GET http://127.0.0.1:5000/api/facility HTTP/1.1
+
+###
+
+GET http://127.0.0.1:5000/api/phone HTTP/1.1

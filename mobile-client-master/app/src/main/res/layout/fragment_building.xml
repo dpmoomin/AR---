@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <!--페이지명-->
+            <TextView
+                android:id="@+id/pageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="건 물 정 보 관 리 페 이 지"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/buildingCreateFormBtn"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:text="등록"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@id/pageTitle"
+                android:layout_marginRight="40dp"/>
+        </RelativeLayout>
+
+        <!--구분선-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="#aaa"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <!--건물_id-->
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="건물id"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <!--건물_이름-->
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:text="건물명"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <!--식별자-->
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:text="식별자"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <!--건물_lat-->
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:text="x좌표"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <!--건물_long-->
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:text="y좌표"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <!--수정-->
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:text="수정"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <!--삭제-->
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:text="삭제"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/admin_building_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+</HorizontalScrollView>

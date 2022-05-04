@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/admin_nav_graph"
+    app:startDestination="@id/AuthenticationFragment">
+
+    <fragment
+        android:id="@+id/AuthenticationFragment"
+        android:name="kr.ac.kumoh.map.AuthenticationFragment"
+        android:label="AuthenticationFragment">
+        <action
+            android:id="@+id/action_nav_authentication_to_main"
+            app:destination="@id/AdminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AdminFragment"
+        android:name="kr.ac.kumoh.map.AdminFragment"
+        android:label="AdminFragment">
+        <action
+            android:id="@+id/action_nav_main_to_building"
+            app:destination="@id/BuildingFragment" />
+        <action
+            android:id="@+id/action_nav_main_to_facility"
+            app:destination="@id/FacilityFragment" />
+        <action
+            android:id="@+id/action_nav_main_to_ap"
+            app:destination="@id/ApFragment" />
+        <action
+            android:id="@+id/action_nav_main_to_phone"
+            app:destination="@id/PhoneFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/BuildingFragment"
+        android:name="kr.ac.kumoh.map.BuildingFragment"
+        android:label="BuildingFragment">
+        <action
+            android:id="@+id/action_nav_building_read_to_create"
+            app:destination="@id/BuildingCreateFragment" />
+        <action
+            android:id="@+id/action_nav_building_read_to_update"
+            app:destination="@id/BuildingUpdateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/BuildingCreateFragment"
+        android:name="kr.ac.kumoh.map.BuildingCreateFragment"
+        android:label="BuildingCreateFragment">
+        <action
+            android:id="@+id/action_nav_building_create_to_read"
+            app:destination="@id/BuildingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/BuildingUpdateFragment"
+        android:name="kr.ac.kumoh.map.BuildingUpdateFragment"
+        android:label="BuildingUpdateFragment">
+        <action
+            android:id="@+id/action_nav_building_update_to_read"
+            app:destination="@id/BuildingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FacilityFragment"
+        android:name="kr.ac.kumoh.map.FacilityFragment"
+        android:label="FacilityFragment">
+        <action
+            android:id="@+id/action_nav_facility_read_to_create"
+            app:destination="@id/FacilityCreateFragment" />
+        <action
+            android:id="@+id/action_nav_facility_read_to_update"
+            app:destination="@id/FacilityUpdateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FacilityCreateFragment"
+        android:name="kr.ac.kumoh.map.FacilityCreateFragment"
+        android:label="FacilityCreateFragment">
+        <action
+            android:id="@+id/action_nav_facility_create_to_read"
+            app:destination="@id/FacilityFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FacilityUpdateFragment"
+        android:name="kr.ac.kumoh.map.FacilityUpdateFragment"
+        android:label="FacilityUpdateFragment">
+        <action
+            android:id="@+id/action_nav_facility_update_to_read"
+            app:destination="@id/FacilityFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PhoneFragment"
+        android:name="kr.ac.kumoh.map.PhoneFragment"
+        android:label="PhoneFragment">
+        <action
+            android:id="@+id/action_nav_phone_read_to_create"
+            app:destination="@id/PhoneCreateFragment" />
+        <action
+            android:id="@+id/action_nav_phone_read_to_update"
+            app:destination="@id/PhoneUpdateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PhoneCreateFragment"
+        android:name="kr.ac.kumoh.map.PhoneCreateFragment"
+        android:label="PhoneCreateFragment">
+        <action
+            android:id="@+id/action_nav_phone_create_to_read"
+            app:destination="@id/PhoneFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PhoneUpdateFragment"
+        android:name="kr.ac.kumoh.map.PhoneUpdateFragment"
+        android:label="PhoneUpdateFragment">
+        <action
+            android:id="@+id/action_nav_phone_update_to_read"
+            app:destination="@id/PhoneFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ApFragment"
+        android:name="kr.ac.kumoh.map.ApFragment"
+        android:label="ApFragment">
+        <action
+            android:id="@+id/action_nav_ap_read_to_create"
+            app:destination="@id/ApCreateFragment" />
+        <action
+            android:id="@+id/action_nav_ap_read_to_update"
+            app:destination="@id/ApUpdateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ApCreateFragment"
+        android:name="kr.ac.kumoh.map.ApCreateFragment"
+        android:label="ApCreateFragment">
+        <action
+            android:id="@+id/action_nav_ap_create_to_read"
+            app:destination="@id/ApFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ApUpdateFragment"
+        android:name="kr.ac.kumoh.map.ApUpdateFragment"
+        android:label="ApUpdateFragment">
+        <action
+            android:id="@+id/action_nav_ap_update_to_read"
+            app:destination="@id/ApFragment" />
+    </fragment>
+</navigation>

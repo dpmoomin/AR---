@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreferenceCompat
+        app:key="search_record"
+        app:title="검색 기록 저장" />
+    <Preference
+        app:key="search_record_delete"
+        app:title="저장된 검색 기록 삭제" />
+    <Preference
+        app:key="admin"
+        app:title="관리자 모드"
+        app:summary="지도 컨텐츠를 관리합니다"/>
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KumMap</string>
+    <string name="mapbox_access_token" translatable="false">pk.eyJ1IjoiNDAxMnNrc2siLCJhIjoiY2t1NnpkZmJ1M3h1aDJycXRwcTZ2czUwaCJ9.ZkIIOaU_RBSdQadMw0LZbw</string>
+    <string name="toggle_arview">AR View</string>
+    <string name="toggle_2dview">2D View</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

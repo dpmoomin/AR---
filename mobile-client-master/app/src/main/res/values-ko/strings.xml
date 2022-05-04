@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">금맵</string>
+    <string name="toggle_arview">AR 뷰</string>
+    <string name="toggle_2dview">2D 뷰</string>
+</resources>

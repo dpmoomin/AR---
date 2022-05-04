@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/map2DFragment">
+
+    <fragment
+        android:id="@+id/map2DFragment"
+        android:name="kr.ac.kumoh.map.Map2DFragment"
+        android:label="Map2DFragment">
+    <action
+        android:id="@+id/action_nav_2D_to_AR"
+        app:destination="@id/ArActivity" />
+        <action
+            android:id="@+id/action_map2DFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+
+    <activity
+        android:id="@+id/ArActivity"
+        android:name="kr.ac.kumoh.map.ArActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </activity>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="kr.ac.kumoh.map.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+
+</navigation>

@@ -1,0 +1,5 @@
+wheel
+gevent
+Flask
+Flask-SQLAlchemy
+mariadb

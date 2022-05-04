@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--페이지명-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="공유기정보등록"
+            android:textColor="#000"
+            android:textSize="27sp"
+            android:gravity="center"/>
+
+        <!--구분선-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="#aaa"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="공유기id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#444"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/ap_id_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="공유기명"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#444"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/ap_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="bssid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#444"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/ap_bssid_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="층"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#444"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/ap_floor_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="15dp"/>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="소속시설물id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#444"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/ap_facid_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="x좌표"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#444"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/ap_lat_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="y좌표"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#444"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/ap_long_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/apCreateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="등록"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
